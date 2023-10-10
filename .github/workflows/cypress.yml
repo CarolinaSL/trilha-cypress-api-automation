@@ -28,7 +28,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npx cypress run -C cypress.config.js --spec cypress/e2e/APITests 
+          command: npm run run-other-tests 
           browser: chrome
 
         env:
