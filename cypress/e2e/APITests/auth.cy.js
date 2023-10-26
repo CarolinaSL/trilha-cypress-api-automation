@@ -55,8 +55,8 @@ describe('auth api testing', () => {
     it(' 3 - POST credentials to auth endpoint with invalid credentials', () => {
 
         let body = {
-            "username": null,
-            "password": "password123"
+            "username": "admin",
+            "password": "wrongPassword"
         };
 
         cy.postRequest("/auth", {"Content-type": "application/json"},  body ).then((response) => {
